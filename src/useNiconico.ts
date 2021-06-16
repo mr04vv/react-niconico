@@ -95,6 +95,7 @@ export function useNiconico<T extends HTMLElement>(
     canvas.style.position = "absolute";
     canvas.style.top = `${ref.current.offsetTop}px`;
     canvas.style.left = `${ref.current.offsetLeft}px`;
+    canvas.style.pointerEvents = `none`;
 
     ctx.font = `bold ${fontSize}px sans-serif`;
     ctx.lineWidth = lineWidth;
