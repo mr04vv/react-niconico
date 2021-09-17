@@ -73,6 +73,7 @@ function useNiconico(options) {
         canvas.style.top = ref.current.offsetTop + "px";
         canvas.style.left = ref.current.offsetLeft + "px";
         canvas.style.pointerEvents = "none";
+        canvas.className = "react-niconico-canvas";
         ctx.font = "bold " + fontSize + "px sans-serif";
         ctx.lineWidth = lineWidth;
         ctx.textBaseline = "top";
